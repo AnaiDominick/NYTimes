@@ -1,0 +1,16 @@
+.jumbotron {
+    background-color:#8A2BE2;
+    text-align: center;
+}
+
+footer {
+    clear: both;
+    border-top: 8px solid black;
+    background-color: #666666;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+   
+}
