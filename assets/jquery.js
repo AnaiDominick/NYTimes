@@ -13,17 +13,17 @@ $("#search").on("click", function() {
         method: "GET"
       }).then(function(response) {
         
-        var results = response.response.docs;
+        var results = response.response;
         
         
 
-        for (var i = 0; i < 5; i++) 
+        for (var i = 0; i < 5; i++) {
        
           var articleDiv = $("<div>")
           var p = $("<p>")
-          p.text("brief description: "+results[i].snippet);
+          p.text("brief description: "+results[i].docs[i].snippet);
           var articleImage = $("<img>");
-          articleImage.attr("src", results[i].multimedia[0].url);
+          articleImage.attr("src", results[i].docs[i].multimedia[0].url);
           articleDiv.append(p);
           articleDiv.append(articlelImage);
 
