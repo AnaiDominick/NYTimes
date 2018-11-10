@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New York Times Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <script src="assets/js/jquery.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4"> <i class="far fa-newspaper"></i> New York Time Search</h1>
+            </div>
+        </div>
+
+
+        <form class="form-group">
+
+            <div class="card">
+                <div class="card-header">Search Parameters </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="exampleSearch">Search Term:</label>
+                    <input type="name" class="form-control" id="searchTerm">
+                </div>
+
+                <!-- <div class="form-group row">
+                        <label for="example-number-input" class="col-2 col-form-label">Number</label>
+                        <div class="col-10">
+                          <input class="form-control" type="number" value="5" id="example-number-input">
+                        </div>
+                </div> -->
+
+                <div class="form-group">
+                    <label for="exampleNumberRecords">Number of records to Retrieve:</label>
+                    <select class="form-control" id="records">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleStartYear">Start Year (Optional):</label>
+                    <input type="year" class="form-control" id="startYear">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleEndYear">End Year (Optional):</label>
+                    <input type="year" class="form-control" id="endYear">
+                </div>
+
+                <div class='btn-group' role='group' aria-label='Basic example'>
+                    <button type='button' class='btn btn-secondary' id="search"> <i class="fas fa-search"></i> Search</button>
+                    <button type='button' class='btn btn-secondary' id="clearResults"> <i class="fas fa-trash-alt"></i>
+                        Clear
+                        Results</button>
+                </div>
+
+            </div>
+
+        </form>
+
+        <form class="form-group">
+
+                <div class="card">
+                    <div class="card-header"> Top Articles </div>
+    
+                    <br>
+    
+                    <div class="form-group" id="article-appear-here">
+                        
+                    </div>
+    
+                    
+    
+                   
+    
+                </div>
+    
+            </form>
+
+    </div>
+
+    <footer>
+        Made with lots and lots of
+        <span <i class="fas fa-heart"></i>></span>
+    </footer>
+
+</body>
+
+</html>
